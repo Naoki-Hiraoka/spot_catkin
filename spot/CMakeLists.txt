@@ -14,7 +14,6 @@ execute_process(COMMAND
 ExternalProject_Add(
   spot
   URL https://www.lrde.epita.fr/dload/spot/spot-2.13.tar.gz
-  GIT_TAG spot-2-13
   CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix ${CMAKE_INSTALL_PREFIX} --disable-python
   #BUILD_COMMAND make -j10
   #INSTALL_COMMAND make install -j10
